@@ -39,3 +39,26 @@ An AI-powered Streamlit app for NCAA basketball analysts, recruiters, and coache
 - Supports year-specific queries like “How did Illinois perform in 2022?”  
 - Modular backend design to allow future extension to player growth and scouting trends  
 - Streamlit-based UI with a clean, tabbed layout for ease of use
+
+
+## Project Structure
+
+This repository is organized into modular components:
+
+### `app/` – Core application logic
+- `chatbot.py` – Streamlit chatbot app for team-level Q&A
+- `recruiting_similarity_app.py` – Recommender tool for similar recruits based on traits
+- `embed_team_scouting.py` – Embedding script for team scouting JSON files
+- `scraper.py` – Player data scraper for seasons from 2008 to 2025
+
+### `data/` – Raw and processed data
+- `raw/` – Scraped JSON and CSV files
+- `cleaned/` – Cleaned datasets ready for use
+- `json/` – Final JSONs used in embedding + chatbot
+
+### `scripts/` – Utility helpers
+- `convert_team_scouting_to_json.py` – Converts scouting data into structured JSON
+
+### Root files
+- `requirements.txt` – All Python dependencies
+- `README.md` – Project documentation and instructions
