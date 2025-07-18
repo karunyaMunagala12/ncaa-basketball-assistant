@@ -1,29 +1,23 @@
 # 🏀 NCAA Basketball Assistant
 
-An AI-powered Streamlit application to assist NCAA basketball analysts, recruiters, and coaches by offering team summaries, player similarity matching, recruiting recommendations, and a chatbot powered by Groq LLM.
-
----
-
-## 📁 Project Structure
-
+An AI-powered Streamlit application designed to assist NCAA basketball analysts, recruiters, and coaches. It provides team summaries, player similarity search, recruiting recommendations, and a smart chatbot powered by Groq LLM + Pinecone.
 
 ---
 
 ## 🚀 Features
 
 - 🧠 **Chatbot Assistant**  
-  Ask season-specific questions like "How did Purdue perform in 2023?" powered by Groq + Pinecone.
+  Ask questions like *“How did Purdue perform in 2023?”* — powered by Groq + Pinecone.
 
 - 📊 **Recruit Matching**  
-  Find similar recruits based on player class, position, and traits using cosine similarity.
+  Find similar recruits using cosine similarity based on traits, class, and position.
 
-- 🛠️ **Data Pipelines**  
-  Scripts to scrape team summaries, convert to JSON, embed using Sentence-BERT, and store in Pinecone.
+- 🔁 **Data Pipelines**  
+  Scripts to scrape, clean, convert to JSON, embed using Sentence-BERT, and store in Pinecone.
 
+---
 
 ## 📁 Project Structure
-
-```text
 nca-basketball-assistant/
 │
 ├── app/                       # Core application scripts
@@ -45,32 +39,23 @@ nca-basketball-assistant/
 └── README.md                 # Project documentation
 
 
+---
 
 ## ⚙️ Installation
 
+Make sure you have Python ≥ 3.9.
+
 ```bash
-# 1. Clone this repository
+# 1. Clone the repository
 git clone https://github.com/karunyaMunagala12/nca-basketball-assistant.git
 cd nca-basketball-assistant
 
 # 2. Install dependencies
 pip install -r requirements.txt
 
-# 3. Create a `.env` file in the root with:
-# GROQ_API_KEY=your_groq_api_key
-# PINECONE_API_KEY=your_pinecone_api_key
-# PINECONE_ENV=your_pinecone_env
+#▶️ Run the App
+Launch the chatbot Streamlit app locally:
 
-
-
-## ▶️ Run the App
-
-To launch the Streamlit app locally:
-
-```bash
 streamlit run app/chatbot.py
 
 
-## 📄 License
-
-MIT License. See `LICENSE` file for details.
