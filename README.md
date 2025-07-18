@@ -37,7 +37,6 @@ nca-basketball-assistant/
 │   ├── json/                  # JSON data for chatbot
 │   └── raw/                   # Raw scraped CSVs and JSONs
 │
-├── embedded_data/            # Precomputed BartTorvik embeddings
 │
 ├── scripts/                  # Utility scripts
 │   └── convert_team_scouting_to_json.py
