@@ -62,3 +62,15 @@ This repository is organized into modular components:
 ### Root files
 - `requirements.txt` – All Python dependencies
 - `README.md` – Project documentation and instructions
+
+
+
+## Installation
+
+Follow these steps to set up the project locally:
+
+### 1️⃣ Clone the repository  
+Download the project files from GitHub to your local machine.
+```bash
+git clone https://github.com/karunyaMunagala12/nca-basketball-assistant.git
+cd nca-basketball-assistant
