@@ -1,0 +1,13 @@
+streamlit
+fastapi
+uvicorn
+sentence-transformers
+pinecone-client
+openai
+python-dotenv
+scikit-learn
+pandas
+numpy
+requests
+matplotlib
+plotly
