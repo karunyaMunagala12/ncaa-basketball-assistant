@@ -74,3 +74,27 @@ Download the project files from GitHub to your local machine.
 ```bash
 git clone https://github.com/karunyaMunagala12/nca-basketball-assistant.git
 cd nca-basketball-assistant
+
+
+---
+
+### 📦 2. Install Required Dependencies  
+Install all the Python packages listed in `requirements.txt`.
+pip install -r requirements.txt
+
+---
+
+### 🛡️ 3. Create a `.env` File  
+Add your API credentials to a `.env` file at the project root.
+GROQ_API_KEY=your_groq_api_key
+PINECONE_API_KEY=your_pinecone_api_key
+PINECONE_ENV=your_pinecone_env
+
+
+> 💡 *Make sure your `.env` file is listed in `.gitignore` to prevent accidental pushes.*
+
+---
+
+### 🚀 4. Run the Chatbot App Locally  
+Start the Streamlit application on your browser.
+streamlit run app/chatbot.py
