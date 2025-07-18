@@ -60,3 +60,17 @@ pip install -r requirements.txt
 # GROQ_API_KEY=your_groq_api_key
 # PINECONE_API_KEY=your_pinecone_api_key
 # PINECONE_ENV=your_pinecone_env
+
+
+
+## ▶️ Run the App
+
+To launch the Streamlit app locally:
+
+```bash
+streamlit run app/chatbot.py
+
+
+## 📄 License
+
+MIT License. See `LICENSE` file for details.
