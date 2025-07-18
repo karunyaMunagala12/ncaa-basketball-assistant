@@ -22,6 +22,8 @@ An AI-powered Streamlit application to assist NCAA basketball analysts, recruite
 
 
 ## 📁 Project Structure
+
+```text
 nca-basketball-assistant/
 │
 ├── app/                       # Core application scripts
