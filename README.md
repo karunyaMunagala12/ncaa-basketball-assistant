@@ -27,3 +27,15 @@ An AI-powered Streamlit app for NCAA basketball analysts, recruiters, and coache
 ---
 
 🧩 This is not just a chatbot — it's a **modular basketball analytics assistant** built for performance, recruiting, and decision-making.
+
+
+
+## Features
+
+- Chatbot assistant that answers team-level questions using embedded scouting summaries  
+- Real-time responses powered by Groq-hosted LLaMA model  
+- Pinecone-powered retrieval for fast, accurate scouting context  
+- Sentence-BERT used to embed and search JSON-formatted team data  
+- Supports year-specific queries like “How did Illinois perform in 2022?”  
+- Modular backend design to allow future extension to player growth and scouting trends  
+- Streamlit-based UI with a clean, tabbed layout for ease of use
