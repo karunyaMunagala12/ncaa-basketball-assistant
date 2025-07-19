@@ -83,6 +83,29 @@ Install all the Python packages listed in `requirements.txt`.
 pip install -r requirements.txt
 
 ---
+🔑 API Key Setup Instructions
+
+To run this application, you need API keys for Pinecone and OpenAI. Follow these steps to get your keys and set them in a .env file.
+
+⸻
+
+🟢 Get Your Pinecone API Key
+	1.	Go to https://www.pinecone.io/
+	2.	Sign up for a free account or log in.
+	3.	From the dashboard, create a project and note your Environment and API Key.
+	4.	You’ll use:
+	•	PINECONE_API_KEY
+	•	PINECONE_ENVIRONMENT (e.g., gcp-starter)
+
+⸻
+
+🔵 Get Your OpenAI API Key
+	1.	Visit https://platform.openai.com/account/api-keys
+	2.	Log in with your OpenAI account.
+	3.	Click Create new secret key and copy the generated key.
+	4.	You’ll use:
+	•	OPENAI_API_KEY
+
 
 ### 🛡️ 3. Create a `.env` File  
 Add your API credentials to a `.env` file at the project root.
