@@ -83,28 +83,31 @@ Install all the Python packages listed in `requirements.txt`.
 pip install -r requirements.txt
 
 ---
-🔑 API Key Setup Instructions
+### 🔑 API Key Setup Instructions
 
-To run this application, you need API keys for Pinecone and OpenAI. Follow these steps to get your keys and set them in a .env file.
+To run this application, you’ll need API keys for **Pinecone** and **OpenAI**.
 
-⸻
+#### 🟢 Pinecone API Key
+1. Go to [https://www.pinecone.io/](https://www.pinecone.io/)
+2. Sign up or log in
+3. Create a project, note your:
+   - `PINECONE_API_KEY`
+   - `PINECONE_ENV` (e.g., `gcp-starter`)
 
-🟢 Get Your Pinecone API Key
-	1.	Go to https://www.pinecone.io/
-	2.	Sign up for a free account or log in.
-	3.	From the dashboard, create a project and note your Environment and API Key.
-	4.	You’ll use:
-	•	PINECONE_API_KEY
-	•	PINECONE_ENVIRONMENT (e.g., gcp-starter)
+#### 🔵 OpenAI API Key
+1. Go to [https://platform.openai.com/account/api-keys](https://platform.openai.com/account/api-keys)
+2. Log in and create a new secret key
+3. Save it as:
+   - `OPENAI_API_KEY=your_key`
 
-⸻
+#### 🛡️ Create a `.env` File
+Put all the above values into a `.env` file:
 
-🔵 Get Your OpenAI API Key
-	1.	Visit https://platform.openai.com/account/api-keys
-	2.	Log in with your OpenAI account.
-	3.	Click Create new secret key and copy the generated key.
-	4.	You’ll use:
-	•	OPENAI_API_KEY
+```env
+PINECONE_API_KEY=your_pinecone_api_key  
+PINECONE_ENV=your_pinecone_env  
+OPENAI_API_KEY=your_openai_key  
+GROQ_API_KEY=your_groq_key  
 
 
 ### 🛡️ 3. Create a `.env` File  
