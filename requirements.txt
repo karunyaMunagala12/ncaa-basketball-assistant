@@ -16,3 +16,4 @@ undetected-chromedriver
 selenium
 torch
 transformers
+groq
