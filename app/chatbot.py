@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 import pandas as pd
 import json
 from sentence_transformers import SentenceTransformer
-import pinecone
+from pinecone import Pinecone  # ✅ correct import for v3+
 from groq import Groq
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics.pairwise import cosine_similarity
@@ -15,13 +15,11 @@ import re
 # === ENV ===
 load_dotenv()
 PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
-PINECONE_ENV = os.getenv("PINECONE_ENV")
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
 # === INIT Services ===
-pinecone.init(api_key=PINECONE_API_KEY, environment=PINECONE_ENV)
-index = pinecone.Index("team-scouting")
-
+pc = Pinecone(api_key=PINECONE_API_KEY)  # ✅ use Pinecone class, not init()
+index = pc.Index("team-scouting")        # ✅ fetch your index from the Pinecone client
 groq_client = Groq(api_key=GROQ_API_KEY)
 embed_model = SentenceTransformer("all-MiniLM-L6-v2")
 
@@ -67,10 +65,8 @@ This assistant uses <b>NCAA team summaries</b> from the <i>Team Scouting</i> dat
         - *Did Alabama improve from 2022 to 2023?*
         """)
 
-  
     INDEX_NAME = "team-scouting"
-    index = pinecone.Index(INDEX_NAME)
-
+    index = pc.Index(INDEX_NAME)
 
     user_query = st.text_input("💬 Ask your question")
 
