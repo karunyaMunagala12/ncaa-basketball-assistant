@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 import pandas as pd
 import json
 from sentence_transformers import SentenceTransformer
-from pinecone import Pinecone
+import pinecone
 from groq import Groq
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics.pairwise import cosine_similarity
@@ -12,16 +12,15 @@ import plotly.graph_objects as go
 from scraper import scrape_player
 import re
 
-
 # === ENV ===
 load_dotenv()
 PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
+PINECONE_ENV = os.getenv("PINECONE_ENV")
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
 # === INIT Services ===
-
-pc = Pinecone(api_key=PINECONE_API_KEY)
-index = pc.Index("team-scouting")
+pinecone.init(api_key=PINECONE_API_KEY, environment=PINECONE_ENV)
+index = pinecone.Index("team-scouting")
 
 groq_client = Groq(api_key=GROQ_API_KEY)
 embed_model = SentenceTransformer("all-MiniLM-L6-v2")
