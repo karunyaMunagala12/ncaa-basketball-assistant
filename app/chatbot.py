@@ -67,8 +67,10 @@ This assistant uses <b>NCAA team summaries</b> from the <i>Team Scouting</i> dat
         - *Did Alabama improve from 2022 to 2023?*
         """)
 
+  
     INDEX_NAME = "team-scouting"
-    index = pc.Index(INDEX_NAME)
+    index = pinecone.Index(INDEX_NAME)
+
 
     user_query = st.text_input("💬 Ask your question")
 
