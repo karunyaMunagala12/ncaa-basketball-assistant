@@ -122,4 +122,4 @@ PINECONE_ENV=your_pinecone_env
 
 ### 🚀 4. Run the Chatbot App Locally  
 Start the Streamlit application on your browser.
-streamlit run app/chatbot.py
+python -m streamlit run app/chatbot.py
