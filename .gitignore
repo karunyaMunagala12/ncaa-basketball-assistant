@@ -1,2 +1,21 @@
+# Virtual environments
+venv/
 .env
-.env
+*.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# OS junk
+.DS_Store
+
+# Jupyter/IPython junk
+.ipynb_checkpoints
+
+# Streamlit logs
+.streamlit/
+
+# VS Code settings
+.vscode/
